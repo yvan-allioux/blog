@@ -29,9 +29,9 @@ jobs:
 
     - name: Commit and push
       run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
+        git config --global user.email "yvan.allioux.pro@gmail.com"
+        git config --global user.name "yvan-allioux"
         git checkout -b build
         git add -A
-        git commit -m "Build"
+        git commit -m "Build github action"
         git push origin build
