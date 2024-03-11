@@ -1,0 +1,36 @@
+[
+    {
+        "html_path": "src/articles/2024-03-11_wardriver/2024-03-11_wardriver.html",
+        "metadata": {
+            "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
+            "author": "John Doe",
+            "date": "2024-03-11",
+            "categories": [
+                "Technology",
+                "Security"
+            ],
+            "tags": [
+                "Pwnagotchi",
+                "WiFi Hacking",
+                "Artificial Intelligence"
+            ]
+        }
+    },
+    {
+        "html_path": "src/articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.html",
+        "metadata": {
+            "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
+            "author": "John Doe",
+            "date": "2024-03-11",
+            "categories": [
+                "Technology",
+                "Security"
+            ],
+            "tags": [
+                "Pwnagotchi",
+                "WiFi Hacking",
+                "Artificial Intelligence"
+            ]
+        }
+    }
+]
