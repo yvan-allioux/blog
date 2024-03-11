@@ -37,7 +37,7 @@ def convert_markdown_to_html(directory):
                 # Add HTML path and metadata to the articles list
                 articles.append({
                     'html_path': html_file_path,
-                    image: metadata.get('image', ''),
+                    'image': metadata.get('image', ''),
                     'metadata': metadata
                 })
 
