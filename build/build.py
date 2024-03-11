@@ -14,13 +14,14 @@ def convert_markdown_to_html(directory):
         print(f'Processing folder: {foldername}')
         for filename in filenames:
             if filename.endswith('.md'):
+                # Convert markdown to HTML
                 file_path = os.path.join(foldername, filename)
                 print(f'Processing file: {file_path}')
                 with open(file_path, 'r') as f:
                     text = f.read()
 
                 html = markdown.markdown(text)
-
+                # Write HTML to file
                 html_file_path = os.path.join(foldername, os.path.splitext(filename)[0] + '.html')
                 print(f'Writing file: {html_file_path}')
                 with open(html_file_path, 'w') as f:
@@ -29,6 +30,9 @@ def convert_markdown_to_html(directory):
                 # Read metadata from YAML file
                 yaml_file_path = os.path.splitext(file_path)[0] + '_metadata.yml'
                 metadata = read_yaml(yaml_file_path) if os.path.exists(yaml_file_path) else {}
+
+                #remove the src/ from the path
+                html_file_path = html_file_path.replace("src/","")
 
                 # Add HTML path and metadata to the articles list
                 articles.append({
