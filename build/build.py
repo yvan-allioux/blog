@@ -2,9 +2,11 @@ import os
 import markdown
 import yaml
 import json
-from datetime import datetime
 
-# This function will convert all markdown files in the given directory to HTML
+def read_yaml(file_path):
+    with open(file_path, 'r') as f:
+        return yaml.safe_load(f)
+
 def convert_markdown_to_html(directory):
     articles = []
 
@@ -17,11 +19,6 @@ def convert_markdown_to_html(directory):
                 with open(file_path, 'r') as f:
                     text = f.read()
 
-                # Extract metadata from YAML frontmatter
-                lines = text.split('\n')
-                yaml_data = '\n'.join(lines[:lines.index('---') + 1])
-                metadata = yaml.safe_load(yaml_data)
-
                 html = markdown.markdown(text)
 
                 html_file_path = os.path.join(foldername, os.path.splitext(filename)[0] + '.html')
@@ -29,17 +26,25 @@ def convert_markdown_to_html(directory):
                 with open(html_file_path, 'w') as f:
                     f.write(html)
 
-                # Add article metadata and HTML path to the list
-                metadata['html_path'] = os.path.relpath(html_file_path, 'src/articles')
-                articles.append(metadata)
+                # Read metadata from YAML file
+                yaml_file_path = os.path.splitext(file_path)[0] + '_metadata.yml'
+                metadata = read_yaml(yaml_file_path) if os.path.exists(yaml_file_path) else {}
 
-                # delete the markdown file
+                # Add HTML path and metadata to the articles list
+                articles.append({
+                    'html_path': html_file_path,
+                    'metadata': metadata
+                })
+
+                # Delete the markdown file
                 os.remove(file_path)
                 print(f'Deleting file: {file_path}')
 
-    # Save articles metadata to a JSON file
-    with open('articles.json', 'w') as json_file:
-        json.dump(articles, json_file, indent=4, default=str)
+    # Save articles data to JSON file
+    json_file_path = os.path.join(directory, '..', 'articles.json')
+    with open(json_file_path, 'w') as f:
+        json.dump(articles, f, indent=4)
+    print(f'Writing JSON file: {json_file_path}')
 
 print("start build.py")
 convert_markdown_to_html('src/articles')
