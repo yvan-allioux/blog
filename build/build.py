@@ -19,6 +19,7 @@ def convert_markdown_to_html(directory):
                     f.write(html)
                 #delete the markdown file
                 os.remove(file_path)
+                print(f'Deleting file: {file_path}')
 
 convert_markdown_to_html('articles')
 
