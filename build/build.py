@@ -21,6 +21,6 @@ def convert_markdown_to_html(directory):
 convert_markdown_to_html('articles')
 
 print("start build.py")
-convert_markdown_to_html('articles')
+convert_markdown_to_html('src/articles')
 print("end build.py")
 

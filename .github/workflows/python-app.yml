@@ -27,11 +27,9 @@ jobs:
       run: |
         python build/build.py
 
-    - name: Commit and push
-      run: |
-        git config --global user.email "yvan.allioux.pro@gmail.com"
-        git config --global user.name "yvan-allioux"
-        git checkout -b build
-        git add -A
-        git commit -m "Build github action"
-        git push origin build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./src
+
