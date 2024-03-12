@@ -37,7 +37,7 @@ function displayCategories(categories) {
 }
 
 // Charger et afficher les catégories
-fetchData().then(data => displayCategories(data.categories));
+//fetchData().then(data => displayCategories(data.categories));
 
 // Charger et afficher les articles
 fetchData().then(data => displayArticles(data));

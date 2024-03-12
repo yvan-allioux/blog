@@ -8,7 +8,19 @@ def read_yaml(file_path):
     with open(file_path, 'r') as f:
         return yaml.safe_load(f)
 
-def convert_markdown_to_html(directory):
+def convert_markdown_to_html(file_path):
+    print(f'Processing file: {file_path}')
+    with open(file_path, 'r') as f:
+        text = f.read()
+    html = markdown.markdown(text)
+    # Write HTML to file
+    html_file_path = os.path.join(foldername, os.path.splitext(filename)[0] + '.html')
+    print(f'Writing file: {html_file_path}')
+    with open(html_file_path, 'w') as f:
+        f.write(html)
+    return html_file_path
+
+def convert_all_markdown_to_html(directory):
     articles = []
     categories = set()
     tags = set()
@@ -19,16 +31,7 @@ def convert_markdown_to_html(directory):
             if filename.endswith('.md'):
                 # Convert markdown to HTML
                 file_path = os.path.join(foldername, filename)
-                print(f'Processing file: {file_path}')
-                with open(file_path, 'r') as f:
-                    text = f.read()
-
-                html = markdown.markdown(text)
-                # Write HTML to file
-                html_file_path = os.path.join(foldername, os.path.splitext(filename)[0] + '.html')
-                print(f'Writing file: {html_file_path}')
-                with open(html_file_path, 'w') as f:
-                    f.write(html)
+                html_file_path = convert_markdown_to_html(file_path)
 
                 # Read metadata from YAML file
                 yaml_file_path = os.path.splitext(file_path)[0] + '_metadata.yml'
@@ -73,5 +76,5 @@ def convert_markdown_to_html(directory):
     print(f'Writing JSON file: {json_file_path}')
 
 print("start build.py")
-convert_markdown_to_html('src/articles')
+convert_all_markdown_to_html('src/articles')
 print("end build.py")
