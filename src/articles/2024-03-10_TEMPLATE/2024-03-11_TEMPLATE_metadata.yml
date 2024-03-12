@@ -1,13 +1,13 @@
-
 title: "Pwnagotchi: The AI-Powered WiFi Hacking Companion"
 author: "John Doe"
 date: "2024-03-11"
 image: "w.jpg"
-visibility: "public"
+visibility: "no"
 categories:
-  - Technology
-  - Security
+  - Development web
+  - Auto Hebergement
 tags:
-  - Pwnagotchi
-  - WiFi Hacking
-  - Artificial Intelligence
+  - Blog
+  - Github action
+  - Python
+  - Markdown
