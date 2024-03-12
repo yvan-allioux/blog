@@ -8,7 +8,7 @@ def read_yaml(file_path):
     with open(file_path, 'r') as f:
         return yaml.safe_load(f)
 
-def convert_markdown_to_html(file_path):
+def convert_markdown_to_html(file_path, foldername, filename):
     print(f'Processing file: {file_path}')
     with open(file_path, 'r') as f:
         text = f.read()
@@ -31,7 +31,7 @@ def convert_all_markdown_to_html(directory):
             if filename.endswith('.md'):
                 # Convert markdown to HTML
                 file_path = os.path.join(foldername, filename)
-                html_file_path = convert_markdown_to_html(file_path)
+                html_file_path = convert_markdown_to_html(file_path, foldername, filename)
 
                 # Read metadata from YAML file
                 yaml_file_path = os.path.splitext(file_path)[0] + '_metadata.yml'
