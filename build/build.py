@@ -2,6 +2,7 @@ import os
 import markdown
 import yaml
 import json
+import re
 
 def read_yaml(file_path):
     with open(file_path, 'r') as f:
@@ -35,7 +36,7 @@ def convert_markdown_to_html(directory):
                 html_file_path = html_file_path.replace("src/","")
 
                 #path to the folder
-                html_folder_path = html_file_path.replace("/*.html","")
+                html_folder_path = re.search("r'(.+?)\.html.*/'", html_file_path)
 
                 # Add HTML path and metadata to the articles list
                 articles.append({
