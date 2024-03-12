@@ -40,6 +40,7 @@ def convert_markdown_to_html(directory):
                 #path to the folder
                 print("current foldername: ", foldername)
                 article_folder_path = foldername.replace("src/","")
+                article_folder_path = article_folder_path + "/"
 
                 # Add HTML path and metadata to the articles list
                 articles.append({
