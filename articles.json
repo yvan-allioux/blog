@@ -1,7 +1,7 @@
 [
     {
-        "html_path": "articles/2024-03-11_wardriver/2024-03-11_wardriver.html",
-        "image_path": "articles/2024-03-11_wardriver/2024-03-11_wardriver.jpg",
+        "html_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.html",
+        "image_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.jpg",
         "metadata": {
             "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
             "author": "John Doe",
@@ -20,8 +20,8 @@
         }
     },
     {
-        "html_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.html",
-        "image_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.jpg",
+        "html_path": "articles/2024-03-11_wardriver/2024-03-11_wardriver.html",
+        "image_path": "articles/2024-03-11_wardriver/2024-03-11_wardriver.jpg",
         "metadata": {
             "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
             "author": "John Doe",
