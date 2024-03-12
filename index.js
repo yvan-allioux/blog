@@ -14,7 +14,7 @@ function displayArticles(articles) {
         const card = document.createElement('div');
         card.classList.add('col');
         card.innerHTML = `
-            <div class="card h-100">
+            <div class="card h-100" onclick="window.location.href='${article.html_path}'">
                 <img src="${article.image_path}" class="card-img-top" alt="${article.metadata.title}">
                 <div class="card-body">
                     <h5 class="card-title">${article.metadata.title}</h5>
