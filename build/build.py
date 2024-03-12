@@ -36,7 +36,8 @@ def convert_markdown_to_html(directory):
                 html_file_path = html_file_path.replace("src/","")
 
                 #path to the folder
-                html_folder_path = re.search("r'(.+?)\.html.*/'", html_file_path)
+                expression_reguliere = r'(.+?)\.html.*/'
+                html_folder_path = re.search(expression_reguliere, html_file_path)
 
                 # Add HTML path and metadata to the articles list
                 articles.append({
