@@ -33,13 +33,17 @@ def convert_markdown_to_html(directory):
                 metadata = read_yaml(yaml_file_path) if os.path.exists(yaml_file_path) else {}
 
                 #remove the src/ from the path
+                print("current html_file_path: ", html_file_path)
                 html_file_path = html_file_path.replace("src/","")
+                print("new html_file_path: ", html_file_path)
 
                 #path to the folder
+                print("current foldername: ", foldername)
                 pattern = r"(.*)\.html"
                 match = re.search(pattern, html_file_path)
                 if match:
                     html_folder_path = match.group(1) + "/"
+                print("new html_folder_path: ", html_folder_path)
 
                 # Add HTML path and metadata to the articles list
                 articles.append({
