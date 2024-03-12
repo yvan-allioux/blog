@@ -1,33 +1,34 @@
 [
     {
-        "html_path": "articles/2024-03-13_pwnagotchi/2024-03-12_pwnagotchi.html",
-        "image_path": "articles/2024-03-13_pwnagotchi/pwnagotchi.jpg",
-        "metadata": {
-            "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
-            "author": "John Doe",
-            "date": "2024-03-11",
-            "image": "pwnagotchi.jpg",
-            "visibility": "public",
-            "categories": [
-                "Technology",
-                "Security"
-            ],
-            "tags": [
-                "Pwnagotchi",
-                "WiFi Hacking",
-                "Artificial Intelligence"
-            ]
-        }
-    },
-    {
-        "html_path": "articles/2024-03-11_wardriver/2024-03-11_wardriver.html",
-        "image_path": "articles/2024-03-11_wardriver/w.jpg",
+        "html_path": "articles/2024-03-10_TEMPLATE/2024-03-11_TEMPLATE.html",
+        "image_path": "articles/2024-03-10_TEMPLATE/w.jpg",
         "metadata": {
             "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
             "author": "John Doe",
             "date": "2024-03-11",
             "image": "w.jpg",
-            "visibility": "public",
+            "visibility": "no",
+            "categories": [
+                "Development web",
+                "Auto Hebergement"
+            ],
+            "tags": [
+                "Blog",
+                "Github action",
+                "Python",
+                "Markdown"
+            ]
+        }
+    },
+    {
+        "html_path": "articles/2024-03-12_blog/2004-03-12_blog.html",
+        "image_path": "articles/2024-03-12_blog/markdown_ilustration.PNG",
+        "metadata": {
+            "title": "Mon blog, h\u00e9bergement gratuit, simplicit\u00e9, maintenabilit\u00e9",
+            "author": "Yvan",
+            "date": "2024-03-12",
+            "image": "markdown_ilustration.PNG",
+            "visibility": "no",
             "categories": [
                 "Technology",
                 "Security"
@@ -47,7 +48,7 @@
             "author": "John Doe",
             "date": "2024-03-11",
             "image": "pwnagotchi.jpg",
-            "visibility": "public",
+            "visibility": "no",
             "categories": [
                 "Technology",
                 "Security"

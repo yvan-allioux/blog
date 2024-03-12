@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- a link to the home page on the center of the page no bootstrap -->
+        <div class="header" style="text-align: center;">
+            <h3><a href="../../index.html">Retour à l'accueil</a></h3>
+        </div>
+<h2>Bon, pourquoi ne pas commencer par quelques informations sur la construction de ce blog ultra simple ?</h2>
+<h2>Comment créer un blog ?</h2>
+<p>Pour créer un blog, vous pouvez utiliser de nombreux outils. Tout d'abord, vous pouvez <strong>utiliser directement un site web d'une enteprise</strong> qui propose de la création et hebergement de blogs, mais ce n'est pas très amusant. Une fois sur le site, créez un compte et utilisez l'interface du site pour écrire. Ce n'est <strong>pas optimal</strong> et on ne <strong>maîtrise pas vraiment le rendu final</strong> que l'on souhaite obtenir. Donc, je ne recommande pas cette option.</p>
+<p>De plus, si vous utilisez un service comme WordPress, vous êtes totalement <strong>dépendant de la technologie</strong>. Si dans 5 ans, le service disparaît, vous serez dans la sauce.</p>
+<p>J'ai donc choisi d'écrire mes articles en <strong>Markdown</strong>, une façon très simple de mettre en forme du texte. Ce n'est pas très élaboré, mais c'est efficace.</p>
+<h2><em>Voici à quoi cela peut ressembler :</em></h2>
+<p><img alt="ilustration_markdown" src="markdown_ilustration.PNG" title="ilustration_markdown" /></p>
+<h2>Qu'est-ce que le Markdown ?</h2>
+<p>Le Markdown est utilisé, par exemple, pour <strong>décrire un projet GitHub</strong> avec le fameux fichier <strong>README.md</strong>. L'avantage, c'est qu'on a notre <strong>mise en page stockée dans un fichier texte</strong>. Cela peut sembler basique, mais si vous utilisez un fichier Word, c'est du binaire, ce qui n'est pas idéal si vous voulez utiliser un autre logiciel que Word ou si vous voulez créer différentes versions de votre fichier texte avec <strong>Git</strong>. C'est pourquoi le Markdown est très utilisé dans les dépôts GitHub, car il s'agit de texte avec une petite couche de style.</p>
+<h2><em>Exemple de redame sur github pour voir comment cela peut rendre</em></h2>
+<p><img alt="exeample_readme" src="exeample_readme.PNG" title="exeample_readme" /></p>
+<p><em>Mon objectif étant d'héberger ce blog sur un dépôt Git, il était plutôt important d'utiliser le Markdown.</em></p>
+<p>Cependant, un problème se pose : <strong>comment le navigateur peut-il lire du Markdown ?</strong> Parce que les sites web sont des pages HTML. La réponse est simple : <strong>il ne peut pas</strong>. Il faut donc <strong>convertir le Markdown en HTML</strong>.</p>
+<p>Pour ce faire, j'ai codé un script Python qui va prendre tous les articles et les convertir en HTML.</p>
+<p>Ce script est lancé automatiquement avec des GitHub Actions, des ordinateurs qui se lancent automatiquement sur les serveurs de GitHub afin d'effectuer des actions sur mon code. Dans mon cas, dès que je fais une mise à jour sur la branche principale, le script est lancé sur les serveurs de GitHub, et le nouveau code converti en HTML depuis le Markdown est directement envoyé sur une autre branche.</p>
+<h3>Voici le fichier build.py qui me convertie mes articles en markdown en html</h3>
+<p><a href="https://github.com/yvan-allioux/blog/blob/main/build/build.py">build.py</a></p>
+<h3>et voici le github action qui automatise le lancement du script</h3>
+<p><a href="https://github.com/yvan-allioux/blog/blob/main/.github/workflows/python-app.yml">github action</a></p>
+<h2>Et pour l'hébergement ?</h2>
+<p>GitHub dispose d'une fonctionnalité appelée GitHub Pages, qui permet de mettre à disposition des fichiers HTML, JavaScript et CSS sur le web directement depuis votre dépôt.</p>
+<p>Il suffit donc d'exposer la branche résultant de notre construction.</p>
+<h2>Les avantages de tout cela :</h2>
+<p>Finalement, j'aurais pu créer un compte WordPress en 10 minutes, mais ici, je maîtrise de A à Z l'écriture, le rendu, l'hébergement et plein d'autres choses intéressantes. Si vous voulez quelque chose de purement fonctionnel, ce n'est peut-être pas la solution la plus efficace, mais si vous êtes un développeur qui souhaite pouvoir bricoler et automatiser plein de choses, cela fait sens.</p>
+<h3>Le code est bien sûr open source <a href="https://github.com/yvan-allioux/blog/">ici</a>.</h3>
+<p>Normalement il suffit de faire un fork du projet et d'activer GitHub Page et c'est bon vous avez votre propre blog 🤠</p></div>
+
+</body>
+
+</html>

@@ -1,11 +1,17 @@
 {
     "categories": [
+        "Auto Hebergement",
         "Security",
-        "Technology"
+        "Technology",
+        "Development web"
     ],
     "tags": [
         "Pwnagotchi",
+        "Markdown",
+        "WiFi Hacking",
+        "Blog",
+        "Github action",
         "Artificial Intelligence",
-        "WiFi Hacking"
+        "Python"
     ]
 }
