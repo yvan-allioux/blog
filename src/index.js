@@ -26,10 +26,10 @@ function displayArticles(articles) {
     });
 }
 
-function displayCategories(categories) {
+function displayCategories(data) {
     const categoriesList = document.getElementById('categories-list');
 
-    categories.forEach(category => {
+    data.categories.forEach(category => {
         const listItem = document.createElement('li');
         listItem.textContent = category;
         categoriesList.appendChild(listItem);
@@ -40,4 +40,4 @@ function displayCategories(categories) {
 fetchData().then(data => displayArticles(data));
 
 // Charger et afficher les catégories
-fetchData().then(data => displayCategories(data));
+fetchData().then(data => displayCategories(data.categories));
