@@ -21,12 +21,12 @@
     },
     {
         "html_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.html",
-        "image_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.html2024-03-11_pwnagotchi.jpg",
+        "image_path": "articles/2024-03-11_pwnagotchi/2024-03-11_pwnagotchi.htmlpwnagotchi.jpg",
         "metadata": {
             "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
             "author": "John Doe",
             "date": "2024-03-11",
-            "image": "2024-03-11_pwnagotchi.jpg",
+            "image": "pwnagotchi.jpg",
             "visibility": "public",
             "categories": [
                 "Technology",
