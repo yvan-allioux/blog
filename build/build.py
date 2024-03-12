@@ -34,11 +34,14 @@ def convert_markdown_to_html(directory):
                 #remove the src/ from the path
                 html_file_path = html_file_path.replace("src/","")
 
+                #path to the folder
+                html_folder_path = html_folder_path.replace("/*.html","")
+
                 # Add HTML path and metadata to the articles list
                 articles.append({
                     'html_path': html_file_path,
-                    #path to the image with all the path
-                    'image_path': html_file_path.replace(".html",".jpg"),#TODO
+                    #path to the image
+                    'image_path': html_folder_path + metadata['image'],
                     'metadata': metadata
                 })
 
