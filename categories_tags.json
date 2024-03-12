@@ -1,11 +1,11 @@
 {
     "categories": [
-        "Technology",
-        "Security"
+        "Security",
+        "Technology"
     ],
     "tags": [
+        "Artificial Intelligence",
         "WiFi Hacking",
-        "Pwnagotchi",
-        "Artificial Intelligence"
+        "Pwnagotchi"
     ]
 }

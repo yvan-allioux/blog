@@ -26,18 +26,20 @@ function displayArticles(articles) {
     });
 }
 
-function displayCategories(data) {
+function displayCategories(categories) {
     const categoriesList = document.getElementById('categories-list');
 
-    data.categories.forEach(category => {
+    categories.forEach(category => {
         const listItem = document.createElement('li');
         listItem.textContent = category;
         categoriesList.appendChild(listItem);
     });
 }
 
+// Charger et afficher les catégories
+fetchData().then(data => displayCategories(data));
+
 // Charger et afficher les articles
 fetchData().then(data => displayArticles(data));
 
-// Charger et afficher les catégories
-fetchData().then(data => displayCategories(data.categories));
+
