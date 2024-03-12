@@ -10,6 +10,7 @@ function displayArticles(articles) {
     const articleList = document.getElementById('article-list');
 
     articles.forEach(article => {
+        if (article.metadata.visibility != "public") return;
         const card = document.createElement('div');
         card.classList.add('col');
         card.innerHTML = `
