@@ -1,6 +1,6 @@
 // Fonction pour récupérer les données du fichier JSON
 async function fetchData() {
-    const response = await fetch('data.json'); // Remplacez 'data.json' par le nom de votre fichier JSON
+    const response = await fetch('articles.json'); // Remplacez 'data.json' par le nom de votre fichier JSON
     const data = await response.json();
     return data;
 }
