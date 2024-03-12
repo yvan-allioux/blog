@@ -26,5 +26,18 @@ function displayArticles(articles) {
     });
 }
 
+function displayCategories(categories) {
+    const categoriesList = document.getElementById('categories-list');
+
+    categories.forEach(category => {
+        const listItem = document.createElement('li');
+        listItem.textContent = category;
+        categoriesList.appendChild(listItem);
+    });
+}
+
 // Charger et afficher les articles
 fetchData().then(data => displayArticles(data));
+
+// Charger et afficher les catégories
+fetchData().then(data => displayCategories(data));
