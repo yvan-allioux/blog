@@ -7,6 +7,7 @@
             "author": "John Doe",
             "date": "2024-03-11",
             "image": "pwnagotchi.jpg",
+            "visibility": "public",
             "categories": [
                 "Technology",
                 "Security"
@@ -26,6 +27,7 @@
             "author": "John Doe",
             "date": "2024-03-11",
             "image": "pwnagotchi.jpg",
+            "visibility": "public",
             "categories": [
                 "Technology",
                 "Security"
