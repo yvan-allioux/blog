@@ -9,15 +9,27 @@ def read_yaml(file_path):
         return yaml.safe_load(f)
 
 def convert_markdown_to_html(file_path, foldername, filename):
+    # Read markdown from file
     print(f'Processing file: {file_path}')
     with open(file_path, 'r') as f:
         text = f.read()
+    # Convert markdown to HTML
     html = markdown.markdown(text)
+    #add header.html
+    with open("src/articles/header.html", 'r') as f:
+        header = f.read()
+    #add footer.html
+    with open("src/articles/footer.html", 'r') as f:
+        footer = f.read()
+    #add header and footer to the html
+    html = header + html + footer
+
     # Write HTML to file
     html_file_path = os.path.join(foldername, os.path.splitext(filename)[0] + '.html')
     print(f'Writing file: {html_file_path}')
     with open(html_file_path, 'w') as f:
         f.write(html)
+    # Return the HTML file path
     return html_file_path
 
 def convert_all_markdown_to_html(directory):
