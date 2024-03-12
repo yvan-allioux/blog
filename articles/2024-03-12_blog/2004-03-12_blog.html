@@ -27,6 +27,7 @@
 <h2><em>Exemple de redame sur github pour voir comment cela peut rendre</em></h2>
 <p><img alt="exeample_readme" src="exeample_readme.PNG" title="exeample_readme" /></p>
 <p><em>Mon objectif étant d'héberger ce blog sur un dépôt Git, il était plutôt important d'utiliser le Markdown.</em></p>
+<p>Petit bonus des fois quand on fait un copier-coller on fait un copier-coller également du style CSS c'est ce qui permet de copier un texte de couleur rouge et quand on le colle il a une couleur rouge c'est super, et bah j'ai trouvé un petit outil en ligne où on va coller ce qu'on a dans le presse-papier et convertir le style en markdown je pose ça <a href="https://euangoddard.github.io/clipboard2markdown/">ici</a></p>
 <p>Cependant, un problème se pose : <strong>comment le navigateur peut-il lire du Markdown ?</strong> Parce que les sites web sont des pages HTML. La réponse est simple : <strong>il ne peut pas</strong>. Il faut donc <strong>convertir le Markdown en HTML</strong>.</p>
 <p>Pour ce faire, j'ai codé un script Python qui va prendre tous les articles et les convertir en HTML.</p>
 <p>Ce script est lancé automatiquement avec des GitHub Actions, des ordinateurs qui se lancent automatiquement sur les serveurs de GitHub afin d'effectuer des actions sur mon code. Dans mon cas, dès que je fais une mise à jour sur la branche principale, le script est lancé sur les serveurs de GitHub, et le nouveau code converti en HTML depuis le Markdown est directement envoyé sur une autre branche.</p>
