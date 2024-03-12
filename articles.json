@@ -28,15 +28,16 @@
             "author": "Yvan",
             "date": "2024-03-12",
             "image": "markdown_ilustration.PNG",
-            "visibility": "no",
+            "visibility": "public",
             "categories": [
-                "Technology",
-                "Security"
+                "Development web",
+                "Auto Hebergement"
             ],
             "tags": [
-                "Pwnagotchi",
-                "WiFi Hacking",
-                "Artificial Intelligence"
+                "Blog",
+                "Github action",
+                "Python",
+                "Markdown"
             ]
         }
     },
