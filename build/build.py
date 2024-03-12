@@ -39,17 +39,13 @@ def convert_markdown_to_html(directory):
 
                 #path to the folder
                 print("current foldername: ", foldername)
-                pattern = r"(.*)\.html"
-                match = re.search(pattern, html_file_path)
-                if match:
-                    html_folder_path = match.group(1) + "/"
-                print("new html_folder_path: ", html_folder_path)
+                article_folder_path = foldername.replace("src/","")
 
                 # Add HTML path and metadata to the articles list
                 articles.append({
                     'html_path': html_file_path,
                     #path to the image
-                    'image_path': html_folder_path + metadata['image'],
+                    'image_path': article_folder_path + metadata['image'],
                     'metadata': metadata
                 })
 
