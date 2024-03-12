@@ -10,6 +10,8 @@ def read_yaml(file_path):
 
 def convert_markdown_to_html(directory):
     articles = []
+    categories = set()
+    tags = set()
 
     for foldername, subfolders, filenames in os.walk(directory):
         print(f'Processing folder: {foldername}')
@@ -50,6 +52,10 @@ def convert_markdown_to_html(directory):
                     'metadata': metadata
                 })
 
+                # Add categories and tags to the global set
+                categories.update(metadata.get('categories', []))
+                tags.update(metadata.get('tags', []))
+
                 # Delete the markdown file
                 os.remove(file_path)
                 print(f'Deleting file: {file_path}')
@@ -58,6 +64,12 @@ def convert_markdown_to_html(directory):
     json_file_path = os.path.join(directory, '..', 'articles.json')
     with open(json_file_path, 'w') as f:
         json.dump(articles, f, indent=4)
+    print(f'Writing JSON file: {json_file_path}')
+
+    # Sauvegarder les catégories et les tags dans un autre fichier JSON
+    json_file_path = os.path.join(directory, '..', 'categories_tags.json')
+    with open(json_file_path, 'w') as f:
+        json.dump({'categories': list(categories), 'tags': list(tags)}, f, indent=4)
     print(f'Writing JSON file: {json_file_path}')
 
 print("start build.py")
