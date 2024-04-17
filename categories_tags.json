@@ -1,25 +1,25 @@
 {
     "categories": [
+        "Technology",
+        "Auto Hebergement",
         "Security",
-        "Development web",
         "impression 3D",
         "DIY",
-        "Technology",
-        "Auto Hebergement"
+        "Development web"
     ],
     "tags": [
-        "Blog",
-        "net",
         "WiFi Hacking",
         "Github action",
-        "Artificial Intelligence",
-        "Python",
         "Pwnagotchi",
-        "trucs",
-        "impression 3D",
         "top3d",
-        "DIY",
         "Markdown",
+        "net",
+        "Blog",
+        "Python",
+        "impression 3D",
+        "DIY",
+        "Artificial Intelligence",
+        "trucs",
         "selection"
     ]
 }
