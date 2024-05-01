@@ -48,8 +48,8 @@
         "html_path": "articles/2024-03-12_pwnagotchi/2024-03-12_pwnagotchi.html",
         "image_path": "articles/2024-03-12_pwnagotchi/pwnagotchi.jpg",
         "metadata": {
-            "title": "Pwnagotchi: The AI-Powered WiFi Hacking Companion",
-            "author": "John Doe",
+            "title": "Pwnagotchi: Le compagnon de piratage WiFi aliment\u00e9 par l'IA",
+            "author": "Yvan Allioux",
             "date": "2024-03-11",
             "image": "pwnagotchi.jpg",
             "visibility": "no",
@@ -82,6 +82,28 @@
                 "Github action",
                 "Python",
                 "Markdown"
+            ]
+        }
+    },
+    {
+        "html_path": "articles/2024-04-18_wardriver/2024-04-18_wardriver.html",
+        "image_path": "articles/2024-04-18_wardriver/5.jpg",
+        "metadata": {
+            "title": "Wardriver",
+            "author": "John Doe",
+            "date": "2024-03-11",
+            "image": "5.jpg",
+            "visibility": "no",
+            "categories": [
+                "hacking",
+                "Technology",
+                "Security"
+            ],
+            "tags": [
+                "WiFi Hacking",
+                "Wardriving",
+                "Security",
+                "Wireless Networks"
             ]
         }
     }
