@@ -1,13 +1,15 @@
-title: "Pwnagotchi: The AI-Powered WiFi Hacking Companion"
+title: "Wardriver"
 author: "John Doe"
 date: "2024-03-11"
-image: "w.jpg"
+image: "5.jpg"
 visibility: "no"
 categories:
-  - Development web
-  - Auto Hebergement
+  - hacking
+  - Technology
+  - Security
 tags:
-  - Blog
-  - Github action
-  - Python
-  - Markdown
+  - WiFi Hacking
+  - Wardriving
+  - Security
+  - Wireless Networks
+
