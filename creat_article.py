@@ -33,7 +33,7 @@ def create_article_directory(base_path, title):
 def create_metadata_file(article_path, title, current_date):
     """Crée le fichier de métadonnées .yml avec un template."""
     metadata_content = f"""title: "{title}"
-author: "yvan"
+author: "Yvan"
 date: "{current_date}"
 image: "template.jpg"
 visibility: "no"
@@ -62,6 +62,27 @@ ceci est un test
         file.write(markdown_content)
     print(f"Fichier Markdown créé: {markdown_filepath}")
 
+
+def update_footer_year(footer_path):
+    """Met à jour l'année de publication dans le fichier footer.html"""
+    current_year = datetime.datetime.now().year
+
+    try:
+        # Lire le contenu du fichier footer.html
+        with open(footer_path, "r", encoding="utf-8") as file:
+            footer_content = file.read()
+
+        # Rechercher l'année et la remplacer
+        updated_footer = re.sub(r'©\d{4}', f'©{current_year}', footer_content)
+
+        # Écrire le nouveau contenu dans le fichier
+        with open(footer_path, "w", encoding="utf-8") as file:
+            file.write(updated_footer)
+        
+        print(f"L'année du footer a été mise à jour à {current_year}.")
+    except Exception as e:
+        print(f"Erreur lors de la mise à jour du footer : {e}")
+
 if __name__ == "__main__":
     # Chemin de base où les articles seront créés
     base_path = "src/articles"
@@ -73,3 +94,4 @@ if __name__ == "__main__":
     article_path, current_date = create_article_directory(base_path, title)
     create_metadata_file(article_path, title, current_date)
     create_markdown_file(article_path, title, current_date)
+    update_footer_year("src/articles/footer.html")
