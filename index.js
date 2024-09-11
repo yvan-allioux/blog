@@ -9,7 +9,7 @@ async function fetchData() {
 function displayArticles(articles) {
     const articleList = document.getElementById('article-list');
 
-    articles.forEach(article => {
+    articles.reverse().forEach(article => {
         if (article.metadata.visibility != "public") return;
         const card = document.createElement('div');
         card.classList.add('col');
