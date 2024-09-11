@@ -25,7 +25,7 @@
         "image_path": "articles/2024-05-01_wardriver/5.jpg",
         "metadata": {
             "title": "Wardriver",
-            "author": "Yvan Allioux",
+            "author": "Yvan",
             "date": "2024-05-01",
             "image": "5.jpg",
             "visibility": "public",
@@ -47,7 +47,7 @@
         "image_path": "articles/2024-03-12_pwnagotchi/pwnagotchi.jpg",
         "metadata": {
             "title": "Pwnagotchi: Le compagnon de piratage WiFi aliment\u00e9 par l'IA",
-            "author": "Yvan Allioux",
+            "author": "Yvan",
             "date": "2024-03-11",
             "image": "pwnagotchi.jpg",
             "visibility": "no",
@@ -67,7 +67,7 @@
         "image_path": "articles/2024-04-16_top3d/14bis.webp",
         "metadata": {
             "title": "S\u00e9lection de trucs \u00e0 imprimer en 3d trouver sur le net",
-            "author": "yvan allioux",
+            "author": "Yvan",
             "date": "2024-04-16",
             "image": "14bis.webp",
             "visibility": "public",
@@ -91,7 +91,7 @@
         "image_path": "articles/2024-09-11-HackRF_mod/hackrf_mod4.jpg",
         "metadata": {
             "title": "HackRF mod",
-            "author": "yvan",
+            "author": "Yvan",
             "date": "2024-09-11",
             "image": "hackrf_mod4.jpg",
             "visibility": "public",
