@@ -1,13 +1,11 @@
-### **hackef mod**
-
-
-## Hey 
+### **HackRF mod**
 
 ### Petit article pour expliquer les modifications que j'ai apporté à mon hackRF
 
 **Déjà premièrement c'est quoi le hack RF** 
 
-https://github.com/portapack-mayhem/mayhem-firmware
+[https://github.com/portapack-mayhem/mayhem-firmware](https://github.com/portapack-mayhem/mayhem-firmware)
+
 C'est un petit appareil permettant de trafiquer les ondes radio, je crois que cela va de 1 mHz ça à 6 GHz, on peut écouter plein de choses et l'appareil n'est absolument pas bridé donc pour bidouiller les ondes radio c'est le must have. 
 
 *Par exemple, j'ai réussi à capter le signal de ma clé de voiture pour ensuite remettre ce signal pour l'ouvrir* 
@@ -18,7 +16,8 @@ C'est un petit appareil permettant de trafiquer les ondes radio, je crois que ce
 On peut faire d'autres choses rigolotes comme localiser les avions au-dessus de nous, écouter la radio (étonnant), capter les différents capteurs autour de nous comme la pression des pneus de voiture et plein d'autres choses intéressant 
 
 Je pose ce lien ici qui présente en français ce qu'on peut faire 
-https://github.com/PierreAdams/HackRF-One-French
+
+lien : [HackRF-One-French](https://github.com/PierreAdams/HackRF-One-French)
 
 Évidemment on peut aussi faire du brouillage d'onde et d'autres choses interdites, donc attention comment on va émettre des ondes, mais pour l'écoute tout est légal, et c'est très intéressant de découvrir ce domaine 
 
@@ -45,3 +44,4 @@ Donc une pierre deux coups car le rechargement de la batterie ne peut se faire u
 ![[hackrf_mod4.jpg]](hackrf_mod4.jpg)
 
 Conclusion, ce n'est pas une solution parfaite car le port USB ressort avec des fils c'est pas très propre mais la double utilisation pour charger la batterie et empêcher l'allumage intempestif répond parfaitement aux besoins
+    
