@@ -87,10 +87,10 @@
         }
     },
     {
-        "html_path": "articles/2024-03-10_hackef_mod/2024-03-11_hackef_mod.html",
-        "image_path": "articles/2024-03-10_hackef_mod/hackrf_mod4.jpg",
+        "html_path": "articles/2024-09-11-HackRF_mod/2024-09-11-HackRF_mod.html",
+        "image_path": "articles/2024-09-11-HackRF_mod/hackrf_mod4.jpg",
         "metadata": {
-            "title": "Hackrf mod",
+            "title": "HackRF mod",
             "author": "yvan",
             "date": "2024-09-11",
             "image": "hackrf_mod4.jpg",
