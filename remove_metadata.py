@@ -24,3 +24,4 @@ def process_directory(directory):
 if __name__ == "__main__":
     src_directory = 'src/articles'
     process_directory(src_directory)
+
